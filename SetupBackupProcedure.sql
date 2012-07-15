@@ -33,7 +33,7 @@ AS
 BEGIN	
 	-- Obtain the current database name.
 	-- This will be used to generate the default file name for the backup.
-	DECLARE @DatabaseName NVARCHAR(30)
+	DECLARE @DatabaseName NVARCHAR(100)
 	SET @DatabaseName = db_name()
 	
 	-- Set the filename for the backup file to the database name, only if the file name has not already been specified.
